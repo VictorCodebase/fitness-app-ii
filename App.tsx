@@ -8,6 +8,7 @@ import * as BackgroundFetch from "expo-background-fetch";
 export default function App() {
 	useEffect(() => {
 		const initialize = async () => {
+			registerBackgroundTask();
 			try {
 				await BackgroundFetch.registerTaskAsync("BACKGROUND_STEP_TRACKING", {
 					minimumInterval: 60 * 15, // Run every 15 minutes (adjust as needed)
