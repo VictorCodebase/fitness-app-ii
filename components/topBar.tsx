@@ -17,14 +17,13 @@ const TopBar = () => {
 		);
       }
 
-    function navigateToSettings () {
-        console.log("Navigating to settings");
-        navigation.navigate("Settings");
-    }
-
 	return (
-		<View style={tw`relative h-20 w-[80%] m-auto flex-row justify-between items-center`}>
-			<Text style={[tw`text-white`, { fontFamily: "Roboto-Bold", fontSize: 25 }]}>AI FITNESS</Text>
+		<View style={tw`relative h-20 w-[100%] p-1 m-auto flex-row justify-between items-center`}>
+			<View>
+				<Text style={[tw`text-white`, { fontFamily: "Roboto-Light", fontSize: 15 }]}>Good Morning, Group!</Text>
+				<Text style={[tw`text-white`, { fontFamily: "Roboto-Bold", fontSize: 22 }]}>Ready To A Morning Run?</Text>
+			</View>
+
 			<TouchableOpacity onPress={() => navigation.navigate("Settings")}>
 				<Cog6ToothIcon style={tw`h-6 w-6 text-white`} />
 			</TouchableOpacity>
