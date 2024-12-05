@@ -6,6 +6,7 @@ import { scheduleTask } from "./tasks/taskScheduler";
 import * as BackgroundFetch from "expo-background-fetch";
 
 export default function App() {
+	//TODO: Use background tasks to fetch step count
 	useEffect(() => {
 		const initialize = async () => {
 			registerBackgroundTask();
@@ -15,7 +16,6 @@ export default function App() {
 					stopOnTerminate: false, // Keep running after the app is terminated
 					startOnBoot: true, // Start when the device boots up
 				});
-				console.log("Background task registered successfully!");
 			} catch (error) {
 				console.error("Failed to register background task:", error);
 			}

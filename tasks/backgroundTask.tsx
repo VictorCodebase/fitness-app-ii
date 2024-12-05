@@ -5,9 +5,7 @@ const BACKGROUND_STEP_TASK = "BACKGROUND_STEP_TRACKING"; // Task name should mat
 
 // Define the background task
 export const registerBackgroundTask = () => {
-    console.log("registering task");
 	TaskManager.defineTask(BACKGROUND_STEP_TASK, async () => {
-        console.log("defining task");
 		try {
 			// Task logic for fetching steps (you can replace with actual logic)
 			console.log("Running background task...");
