@@ -14,9 +14,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "UIBackgroundModes": ["location", "processing"]
+      "UIBackgroundModes": [
+        "location",
+        "processing"
+      ]
     },
-    
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -30,7 +32,8 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      "expo-sqlite"
     ]
   }
 }
