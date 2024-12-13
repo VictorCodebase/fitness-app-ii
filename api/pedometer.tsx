@@ -14,6 +14,9 @@ export default function pedometerApi(){
 		const subscription = Pedometer.watchStepCount((result) => {
 			setStepCount(result.steps);
 		});
-		return () => subscription.remove();
-    }, []);
+	return () => subscription.remove();
+   }, []);
 }
+
+
+
