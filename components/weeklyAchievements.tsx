@@ -1,3 +1,4 @@
+//weeklyAchievements.tsx
 import React from "react";
 import { View, Text, Image, SafeAreaView } from "react-native";
 import tw from "twrnc";
