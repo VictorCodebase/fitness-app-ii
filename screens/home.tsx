@@ -12,6 +12,7 @@ import HomeBackground from "../components/homeBackground";
 import TopBar from "../components/topBar";
 import AnalysisChart from "../components/analysisChart";
 import WeeklyAchievements from "../components/weeklyAchievements";
+import BottomBar from "../components/bottomBar";
 
 export default function Home() {
 	const { fontsLoaded } = useFontContext();
@@ -86,10 +87,13 @@ export default function Home() {
 
 					<Text style={[tw`text-white mt-[3rem] mb-3`, { fontFamily: "Roboto-Bold", fontSize: 17 }]}>Analysis</Text>
 					<AnalysisChart />
+				
+
 
 					<Text style={[tw`text-white mt-[3rem] mb-3`, { fontFamily: "Roboto-Bold", fontSize: 17 }]}>Your weekly achievements</Text>
 					<WeeklyAchievements />
 				</ScrollView>
+				<BottomBar/>
 			</SafeAreaView>
 		</>
 	);
