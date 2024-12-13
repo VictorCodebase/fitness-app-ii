@@ -43,7 +43,7 @@ export default function Home() {
 									Distance increase: 46%
 								</Text>
 								<Text style={[tw`text-white mx-4`, { fontFamily: "Roboto-Light", fontSize: 15 }]}>
-									Testerday 2.8Km
+									Yesterday 2.8Km
 								</Text>
 							</View>
 						</View>
