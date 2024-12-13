@@ -12,12 +12,6 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-<<<<<<< HEAD
-    "permissions": [
-      "ACTIVITY_RECOGNITION",
-      "NOTIFICATIONS"
-    ],
-=======
     "ios": {
       "supportsTablet": true,
       "UIBackgroundModes": [
@@ -34,7 +28,6 @@
         "ACTIVITY_RECOGNITION"
       ]
     },
->>>>>>> 18387716fbb67ef2fb428f7c7edf198149f151e4
     "web": {
       "favicon": "./assets/favicon.png"
     },
