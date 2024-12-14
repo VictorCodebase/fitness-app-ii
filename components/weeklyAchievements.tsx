@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, SafeAreaView } from "react-native";
+import { View, Image, ScrollView } from "react-native";
 import tw from "twrnc";
 
 export default function WeeklyAchievements() {
@@ -11,25 +11,25 @@ export default function WeeklyAchievements() {
 	const currentLevel = 18;
 
 	// Function to determine available achievements:
-	const availableAchievements = () => {
-		const achievements: { [key: string]: string[] } = {};
+	const availableAchievements = (): { [key: string]: any } => {
+		const achievements: { [key: string]: any } = {};
 		if (totalSteps >= 7000) {
-			achievements["7k steps"] = ["./assets/medals/7ksteps.png"];
+			achievements["7k steps"] = require("../assets/medals/7ksteps.png");
 		}
-		if (totalSteps >= 10000) {
-			achievements["10k steps"] = ["./assets/medals/10ksteps.png"];
-		}
+		// if (totalSteps >= 10000) {
+		// 	achievements["10k steps"] = require("../assets/medals/10ksteps.png");
+		// }
 		if (totalDistance >= 5) {
-			achievements["5km distance"] = ["./assets/medals/5km.png"];
+			achievements["5km distance"] = require("../assets/medals/5kmdistance.png");
 		}
-		if (totalDistance >= 10) {
-			achievements["10km distance"] = ["./assets/medals/10km.png"];
-		}
+		// if (totalDistance >= 10) {
+		// 	achievements["10km distance"] = require("../assets/medals/10km.png");
+		// }
 		if (achievementStreak >= 5) {
-			achievements["5 day streak"] = ["./assets/medals/5daystreak.png"];
+			achievements["5 day streak"] = require("../assets/medals/5kmdistance.png");
 		}
 		if (prevLevel < currentLevel) {
-			achievements["Level Up"] = ["./assets/medals/levelup.png"];
+			achievements["Level Up"] = require("../assets/medals/level18.png");
 		}
 
 		return achievements;
@@ -38,15 +38,21 @@ export default function WeeklyAchievements() {
 	const achievements = availableAchievements();
 
 	return (
-		<SafeAreaView style={tw`p-4`}>
-			<View style={tw`w-min-w-max`}>
-				{Object.entries(achievements).map(([key, value], index) => (
-					<View key={index} style={tw`flex-row items-center mb-4`}>
-						<Text style={tw`text-lg font-bold mr-2`}>{key}</Text>
-						<Image source={{ uri: value[0] }} style={tw`w-10 h-10`} resizeMode="contain" />
+		<View>
+			<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+				{Object.entries(achievements).map(([key, imgSource], index) => (
+					<View key={index} style={tw`flex-row items-center mb-4 w-[6rem] mr-3 justify-center`}>
+						<View
+							style={{
+								...tw`absolute inset-0 bg-white`,
+								opacity: 0.1,
+								borderRadius: 8,
+							}}
+						/>
+						<Image source={imgSource} style={tw`w-20 h-20`} resizeMode="contain" />
 					</View>
 				))}
-			</View>
-		</SafeAreaView>
+			</ScrollView>
+		</View>
 	);
 }

@@ -84,11 +84,13 @@ export default function Home() {
 						</View>
 					</View>
 
-					<Text style={[tw`text-white mt-[3rem] mb-3`, { fontFamily: "Roboto-Bold", fontSize: 17 }]}>Analysis</Text>
-					<AnalysisChart />
-
-					<Text style={[tw`text-white mt-[3rem] mb-3`, { fontFamily: "Roboto-Bold", fontSize: 17 }]}>Your weekly achievements</Text>
+					<Text style={[tw`text-white mt-[3rem] mb-3`, { fontFamily: "Roboto-Bold", fontSize: 17 }]}>
+						Weekly achievements
+					</Text>
 					<WeeklyAchievements />
+
+					<Text style={[tw`text-white mb-3`, { fontFamily: "Roboto-Bold", fontSize: 17 }]}>Analysis</Text>
+					<AnalysisChart />
 				</ScrollView>
 			</SafeAreaView>
 		</>
