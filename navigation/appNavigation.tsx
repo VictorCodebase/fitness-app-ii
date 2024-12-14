@@ -2,6 +2,7 @@ import React from "react";
 
 import Home from "../screens/home";
 import Settings from "../screens/settings";
+import Notifications from "../screens/NotificationComponent";
 
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -19,6 +20,7 @@ export default function AppNavigation() {
 			<Stack.Navigator screenOptions={{ headerShown: false }}>
 				<Stack.Screen name="Home" component={Home} />
 				<Stack.Screen name="Settings" component={Settings} />
+				<Stack.Screen name="Notifications" component={Notifications} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);
