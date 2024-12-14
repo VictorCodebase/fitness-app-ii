@@ -1,3 +1,4 @@
+// analysisChart.tsx
 import React from "react";
 import { View, Dimensions, ScrollView } from "react-native";
 import { BarChart, LineChart } from "react-native-chart-kit";
