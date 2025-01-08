@@ -1,0 +1,18 @@
+{
+	"data": [
+		{ "date": "2024-12-28", "activeCaloriesBurned": 220, "elevationGained": 50, "heartRate": 75, "distance": 4.4 },
+		{ "date": "2024-12-29", "activeCaloriesBurned": 200, "elevationGained": 60, "heartRate": 78, "distance": 4.0 },
+		{ "date": "2024-12-30", "activeCaloriesBurned": 250, "elevationGained": 70, "heartRate": 80, "distance": 5.0 },
+		{ "date": "2024-12-31", "activeCaloriesBurned": 210, "elevationGained": 40, "heartRate": 72, "distance": 4.2 },
+		{ "date": "2025-01-01", "activeCaloriesBurned": 230, "elevationGained": 55, "heartRate": 76, "distance": 4.6 },
+		{ "date": "2025-01-02", "activeCaloriesBurned": 240, "elevationGained": 65, "heartRate": 79, "distance": 4.8 },
+		{ "date": "2025-01-03", "activeCaloriesBurned": 180, "elevationGained": 45, "heartRate": 74, "distance": 3.6 },
+		{ "date": "2025-01-04", "activeCaloriesBurned": 220, "elevationGained": 50, "heartRate": 76, "distance": 4.4 },
+		{ "date": "2025-01-05", "activeCaloriesBurned": 200, "elevationGained": 60, "heartRate": 77, "distance": 4.0 },
+		{ "date": "2025-01-06", "activeCaloriesBurned": 250, "elevationGained": 80, "heartRate": 80, "distance": 5.0 },
+		{ "date": "2025-01-07", "activeCaloriesBurned": 210, "elevationGained": 65, "heartRate": 74, "distance": 4.2 },
+		{ "date": "2025-01-08", "activeCaloriesBurned": 190, "elevationGained": 75, "heartRate": 76, "distance": 3.7 },
+		{ "date": "2025-01-09", "activeCaloriesBurned": 240, "elevationGained": 85, "heartRate": 78, "distance": 4.8 },
+		{ "date": "2025-01-10", "activeCaloriesBurned": 220, "elevationGained": 90, "heartRate": 75, "distance": 4.4 }
+	]
+}
