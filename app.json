@@ -1,52 +1,58 @@
 {
-	"expo": {
-		"name": "ai-fitness",
-		"slug": "ai-fitness",
-		"version": "1.0.0",
-		"orientation": "portrait",
-		"icon": "./assets/icon.png",
-		"userInterfaceStyle": "light",
-		"newArchEnabled": true,
-		"splash": {
-			"image": "./assets/splash-icon.png",
-			"resizeMode": "contain",
-			"backgroundColor": "#ffffff"
-		},
-		"ios": {
-			"supportsTablet": true,
-			"UIBackgroundModes": ["location", "processing"]
-		},
-		"android": {
-			"adaptiveIcon": {
-				"foregroundImage": "./assets/adaptive-icon.png",
-				"backgroundColor": "#ffffff"
-			},
-			"permissions": ["ACTIVITY_RECOGNITION"],
-			"package": "com.group.aifitness"
-		},
-		"web": {
-			"favicon": "./assets/favicon.png"
-		},
-		"plugins": [
-			[
-				"expo-build-properties",
-				{
-					"android": {
-						"compileSdkVersion": 34,
-						"targetSdkVersion": 34,
-						"minSdkVersion": 26
-					}
-				}
-			]
-		],
-		"extra": {
-			"eas": {
-				"projectId": "4a2011c8-884b-4d87-9465-0a963c20a9df"
-			}
-		},
-		"dependencies": {
-			"expo-font": "^x.x.x",
-			"expo-sqlite": "^x.x.x"
-		}
-	}
+  "expo": {
+    "name": "ai-fitness",
+    "slug": "ai-fitness",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "UIBackgroundModes": [
+        "location",
+        "processing"
+      ]
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACTIVITY_RECOGNITION"
+      ],
+      "package": "com.group.aifitness"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "minSdkVersion": 26
+          }
+        }
+      ],
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4a2011c8-884b-4d87-9465-0a963c20a9df"
+      }
+    },
+    "dependencies": {
+      "expo-font": "^x.x.x",
+      "expo-sqlite": "^x.x.x"
+    }
+  }
 }

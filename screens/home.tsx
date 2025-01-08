@@ -14,6 +14,7 @@ import AnalysisChart from "../components/analysisChart";
 import WeeklyAchievements from "../components/weeklyAchievements";
 import StepCounter from "../api/pedometer";
 import {readActiveCaloriesBurned, readDistanceWalked, readElevationGained, readHeartRate} from "../api/health-api";
+import SocialShare from "../components/socials";
 
 export default function Home() {
 	const now = new Date();
@@ -154,14 +155,14 @@ export default function Home() {
 							<View style={tw`w-[30%]`}>
 								<View style={tw`flex flex-row`}>
 									<Text style={[tw`text-white`, { fontFamily: "Roboto-Bold", fontSize: 28 }]}>
-										{heartRate ?? 0}
+										{elevationGained ?? 0}
 									</Text>
 									<Text style={[tw`text-gray-300`, { fontFamily: "Roboto-Light", fontSize: 13 }]}>
-										bpm
+										m
 									</Text>
 								</View>
 								<Text style={[tw`text-white tracking-wide`, { fontFamily: "Roboto-Light", fontSize: 10 }]}>
-									Avge heart rate
+									Elevation gain
 								</Text>
 							</View>
 						</View>
@@ -171,8 +172,9 @@ export default function Home() {
 					<WeeklyAchievements />
 
 					<Text style={[tw`text-white mb-3`, { fontFamily: "Roboto-Bold", fontSize: 17 }]}>Analysis</Text>
-					<AnalysisChart rawCaloriesBurned={rawCaloriesBurned} rawHeartRate={rawHeartRate}/>
-					<StepCounter />
+					<AnalysisChart rawCaloriesBurned={rawCaloriesBurned} rawHeartRate={rawHeartRate} />
+
+					<SocialShare distanceWalked={distanceWalked[1]} />
 				</ScrollView>
 			</SafeAreaView>
 		</>

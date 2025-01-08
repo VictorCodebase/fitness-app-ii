@@ -40,17 +40,6 @@ const data = {
 	],
 };
 
-const chartData = {
-	labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"],
-	datasets: [
-		{
-			data: [30, 60, 45, 80],
-			color: (opacity = 1) => `rgba(134, 65, 244, ${opacity})`, // optional
-			strokeWidth: 2, // optional
-		},
-	],
-};
-
 const today = new Date();
 const sixDaysAgo = new Date();
 sixDaysAgo.setDate(today.getDate() - 6);
@@ -101,7 +90,7 @@ export default function AnalysisChart({ rawCaloriesBurned, rawHeartRate }) {
 		<ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
 			<View>
 				<BarChart
-					data={caloriesData}
+					data={data}
 					width={screenWidth - 52}
 					height={220}
 					yAxisLabel=""
@@ -126,7 +115,7 @@ export default function AnalysisChart({ rawCaloriesBurned, rawHeartRate }) {
 			</View>
 			<View>
 				<LineChart
-					data={heartRateData}
+					data={data}
 					width={screenWidth - 32} // Adjust based on your screen size
 					height={220}
 					chartConfig={{
